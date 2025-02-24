@@ -1,0 +1,437 @@
+@font-face {
+  font-family: "Kanban Icons";
+  src: url('fonts/kanban-webfont.eot');
+  src: url('fonts/kanban-webfontd41d.eot?#iefix') format('embedded-opentype'), url('fonts/kanban-webfont.woff2') format('woff2'), url('fonts/kanban-webfont.woff') format('woff'), url('fonts/kanban-webfont.ttf') format('truetype'), url('fonts/kanban-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.cybro_kanban_icon:before {
+  display: inline-block;
+  font: normal normal normal 24px/1 "Kanban Icons";
+  font-size: inherit;
+  text-rendering: auto;
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.kbi-account:before {
+  content: "\F001";
+}
+.kbi-cogs:before {
+  content: "\F002";
+}
+.kbi-comment:before {
+  content: "\F003";
+}
+.kbi-file:before {
+  content: "\F004";
+}
+.kbi-file-archive:before {
+  content: "\F005";
+}
+.kbi-file-audio:before {
+  content: "\F006";
+}
+.kbi-file-excel:before {
+  content: "\F007";
+}
+.kbi-file-image:before {
+  content: "\F008";
+}
+.kbi-file-pdf:before {
+  content: "\F009";
+}
+.kbi-file-powerpoint:before {
+  content: "\F010";
+}
+.kbi-file-video:before {
+  content: "\F011";
+}
+.kbi-file-word:before {
+  content: "\F012";
+}
+.kbi-pencil:before {
+  content: "\F013";
+}
+.kbi-plus-circle:before {
+  content: "\F014";
+}
+.kbi-upload:before {
+  content: "\F015";
+}
+.cybro_kanban {
+  background-color: #EBEDF0;
+}
+.cybro_kanban .cybro_accordionitem.collapsed {
+  border-color: #DADEE0;
+}
+.cybro_kanban .cybro_accordionitem.collapsed .cybro_accordionitem_header {
+  border-color: transparent;
+}
+.cybro_kanban .cybro_accordionitem_header {
+  border-left: 1px solid #DADEE0;
+  border-right: 1px solid #DADEE0;
+  background-color: #ffffff;
+}
+.cybro_kanban_list {
+  border-color: #EBEDF0;
+}
+.cybro_kanban {
+  background-color: #1B0F46;
+}
+.cybro_kanban .cybro_accordionitem {
+  border-left-color: #EBEDF0;
+  border-right-color: #EBEDF0;
+  border-bottom-color: #EBEDF0;
+  background: #EBEDF0;
+}
+.cybro_kanban .cybro_accordionitem_body {
+  background-color: #EBEDF0;
+}
+/*List template*/
+.cybro_kanban_list {
+  background-color: #ABADAF;
+}
+.cybro_dataview_item.cybro_kanban_list_item,
+.cybro_dataview_item.cybro_kanban_list_item.cybro_selected {
+  float: left;
+  padding: 8px 4px 0;
+  background-color: #EBEDF0;
+  border: none;
+}
+.cybro_kanban_list_item,
+.cybro_kanban_list_item.cybro_list_item.cybro_selected {
+  background-color: #EBEDF0;
+  padding: 8px 0 0;
+  border: none;
+}
+.cybro_kanban_list_item.cybro_drag_over .cybro_kanban_list_content {
+  border-color: #1CA1C1;
+  border-left-color: #1CA1C1;
+}
+.cybro_kanban_list_content {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #475466;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border: 1px solid #DADEE0;
+  border-left: 3px solid #1CA1C1;
+}
+.cybro_kanban_list_item.cybro_selected .cybro_kanban_list_content {
+  background: #F4F5F9;
+  color: #475466;
+}
+.cybro_kanban_list_item.cybro_selected {
+  box-shadow: none;
+}
+.cybro_kanban_body {
+  min-height: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  overflow: hidden;
+  padding: 14px 40px 8px 12px;
+  position: relative;
+}
+/*Item Footer*/
+.cybro_kanban_list_item .cybro_kanban_footer {
+  height: auto;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  padding: 0 8px;
+  margin-bottom: 6px;
+}
+.cybro_kanban_tags {
+  overflow: hidden;
+  -webkit-flex: initial;
+  -moz-flex: initial;
+  -ms-flex: initial;
+  flex: initial;
+  -webkit-box-flex: 1;
+}
+.cybro_kanban_footer_icons {
+  overflow: hidden;
+  -webkit-flex: auto;
+  -moz-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  -webkit-box-flex: 1;
+  text-align: right;
+}
+.cybro_ie .cybro_kanban_tags,
+.cybro_ie .cybro_kanban_footer_icons {
+  display: inline-block;
+}
+.cybro_ie .cybro_kanban_footer_icons {
+  float: right;
+}
+.cybro_kanban_tag,
+.cybro_kanban_footer_icon {
+  display: inline-block;
+}
+.cybro_kanban_list_item .cybro_kanban_footer .cybro_icon {
+  color: #94a1b3;
+  width: 16px;
+  font-size: 16px;
+  vertical-align: inherit;
+  margin-right: 4px;
+}
+.cybro_kanban_list_item .cybro_kanban_footer_icon {
+  margin: 0 8px 2px 0;
+}
+.cybro_kanban_list_item .cybro_kanban_footer_icon:last-child {
+  margin-right: 0;
+}
+.cybro_kanban_list_item .cybro_kanban_footer_icon:hover {
+  color: #1CA1C1;
+}
+.cybro_kanban_list_item .cybro_kanban_footer_icon:hover .cybro_icon {
+  color: #1CA1C1;
+}
+.cybro_kanban_list_item .cybro_kanban_tag {
+  background: rgba(228, 230, 240, 0.8);
+  padding: 0 8px;
+  border-radius: 12px;
+  margin: 0 8px 2px 0;
+}
+.cybro_kanban_user_avatar {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  background: rgba(228, 230, 240, 0.8);
+  color: #94a1b3;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.cybro_kanban_user_avatar .cybro_icon {
+  width: inherit;
+  height: inherit;
+  font-size: 30px;
+}
+.cybro_kanban_user_avatar:hover {
+  box-shadow: #1CA1C1 0 0 2px 1px;
+}
+.cybro_kanban_drag_zone .cybro_kanban_list_item {
+  padding: 0 !important;
+}
+.cybro_kanban_drop_inner {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px dashed #1CA1C1;
+  border-radius: 2px;
+  height: 100%;
+}
+.cybro_kanban_list .cybro_drop_area {
+  border: none;
+  height: 88px;
+  padding: 8px 0 0;
+  background-color: transparent;
+}
+.cybro_dataview.cybro_kanban_list .cybro_drop_area {
+  padding: 8px 4px 0;
+}
+.cybro_kanban_avatar {
+  width: 100%;
+  height: 100%;
+}
+.cybro_list_item .cybro_kanban_list_avatar {
+  width: 32px;
+  height: 32px;
+  font-size: 30px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+  text-align: center;
+  background: #e7e9f2;
+  color: #94a1b3;
+}
+/*Uploader*/
+.cybro_kanban_uploader .cybro_button.cybro_img_btn {
+  color: #475466;
+  font-size: 14px;
+  text-align: right;
+}
+.cybro_kanban_uploader .cybro_button.cybro_img_btn:hover {
+  background: transparent;
+  color: #1CA1C1;
+}
+.cybro_kanban_uploader .cybro_button.cybro_img_btn:hover .cybro_kanban_icon {
+  color: #1CA1C1;
+}
+.cybro_kanban_uploader .cybro_button.cybro_img_btn:active {
+  background: transparent;
+  box-shadow: none;
+}
+.cybro_kanban_uploader .cybro_button.cybro_img_btn:focus {
+  background: transparent;
+}
+.cybro_kanban_uploader_label {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.cybro_kanban_uploader_progress,
+.cybro_kanban_uploader_progress_server,
+.cybro_kanban_uploader_progress_error {
+  float: right;
+  margin-left: 5px;
+}
+.cybro_kanban_uploader_progress_server {
+  color: #55CD97;
+}
+.cybro_kanban_uploader_progress_error {
+  color: #FDBF4C;
+}
+.cybro_kanban_uploader_title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 3px 8px;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.cybro_kanban_uploader_body {
+  text-align: center;
+  line-height: 90px;
+  overflow: hidden;
+  background-color: #e7e9f2;
+  width: 100%;
+  height: 100%;
+}
+.cybro_kanban_uploader_body .cybro_icon {
+  color: #94a1b3;
+  font-size: 40px;
+  width: 30px;
+  margin: 0;
+}
+.cybro_kanban_uploader_body img {
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-user-drag: none;
+}
+.cybro_kanban_dataview_uploader .cybro_dataview_item {
+  padding: 0;
+  border-color: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.cybro_kanban_dataview_uploader .cybro_dataview_item:focus {
+  outline-style: none;
+}
+.cybro_kanban_remove_upload {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 0 0 0 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  line-height: 20px;
+}
+.cybro_kanban_remove_upload:hover {
+  color: #FF5C4C;
+}
+.cybro_kanban_remove_upload .cybro_icon {
+  line-height: inherit;
+}
+.cybro_kanban_attachment {
+  max-width: 100%;
+  max-height: 300px;
+  display: block;
+}
+.cybro_kanban_editor .cybro_toolbar .cybro_el_label {
+  font-size: 20px;
+  padding-left: 2px;
+}
+.cybro_kanban_editor .cybro_win_head {
+  border-color: transparent;
+}
+.cybro_kanban_color_item {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  margin-top: -2px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.cybro_kanban_colorpicker .cybro_list_item {
+  padding-left: 8px;
+}
+.cybro_kanban_colorpicker .cybro_list_item.cybro_selected {
+  padding-left: 8px;
+  background-color: #F4F5F9;
+  color: #475466;
+  box-shadow: none;
+}
+.cybro_kanban_dataview_uploader .cybro_overlay {
+  padding: 0;
+  border: 2px dashed #1CA1C1;
+  border-radius: 2px;
+  line-height: 90px;
+}
+/*Header*/
+.cybro_kanban_header {
+  background: #EBEDF0;
+  color: #313131;
+}
+.cybro_kanban_header .cybro_strong {
+  font-size: 16px;
+}
+.cybro_kanban_header xxx {
+  padding: 0;
+}
+.cybro_kanban_sub_header {
+  background: #657584;
+  color: #ffffff;
+}
+.cybro_kanban_sub_header xxx {
+  padding: 0 12px;
+}
+.cybro_kanban_sub_header .cybro_strong {
+  font-weight: 500;
+}
+.cybro_kanban_add_icon {
+  cursor: pointer;
+}
+.cybro_kanban_add_icon.cybro_icon:hover {
+  color: #1CA1C1;
+}
+.cybro_kanban_header .cybro_icon,
+.cybro_kanban_sub_header .cybro_icon {
+  color: #94a1b3;
+  font-size: 20px;
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.cybro_kanban_sub_header .cybro_icon {
+  color: #ffffff;
+}
